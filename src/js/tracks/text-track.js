@@ -160,9 +160,9 @@ class TextTrack extends Track {
     let mode = TextTrackMode[settings.mode] || 'disabled';
     const default_ = settings.default;
 
-    if (settings.kind === 'metadata' || settings.kind === 'chapters') {
-      mode = 'hidden';
-    }
+    // if (settings.kind === 'metadata' || settings.kind === 'chapters') {
+    //   mode = 'hidden';
+    // }
     // on IE8 this will be a document element
     // for every other browser this will be a normal object
     const tt = super(settings);
